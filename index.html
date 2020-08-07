@@ -182,9 +182,33 @@
         </script>
 
         <!-- Your Chat Plugin code -->
-        <div class="fb-customerchat" attribution=setup_tool page_id="440419450017951" theme_color="#808080" logged_in_greeting="Olá, eu sou a Alice, a assistente digital da Agentifai. Em que posso ajudar?" logged_out_greeting="Olá, eu sou a Alice, a assistente digital da Agentifai. Em que posso ajudar?" ref='FacebookWidgetAgentifai' referer_uri='https://zecarlos94.github.io/widget-static-website/'>
-       </div>
+        <div class="fb-customerchat" attribution=setup_tool page_id="440419450017951" theme_color="#808080" greeting_dialog_display="hide" logged_in_greeting="Olá, eu sou a Alice, a assistente digital da Agentifai. Em que posso ajudar?" logged_out_greeting="Olá, eu sou a Alice, a assistente digital da Agentifai. Em que posso ajudar?" ref='FacebookWidgetAgentifai' referer_uri='https://zecarlos94.github.io/widget-static-website/'>
+        </div>
 
+        
+         <!-- WhatsApp API Widget -->
+        <iframe id="whatsapp__iframe" name="blank_whatsapp" width="60px" tabindex="-1" data-testid="bubble_iframe" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" 
+                style="margin: 0px 12px; padding: 0px; position: fixed; z-index: 2147483644; bottom: 100px; top: auto; right: 12px; height: 60px; width: 60px; border-radius: 29px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px; background-color:#25d366;color:#fff;display: block;">
+            <!DOCTYPE html>
+                <head>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+                </head>
+                <body>
+                    <!-- WhatsApp API Widget -->
+                    <div>
+                        <a href="https://api.whatsapp.com/send?phone=+14155238886" target="_blank">
+                            <i class="fa fa-3x fa-whatsapp" style="color: #fff;margin: 0px 2px;"></i>
+                        </a>
+                    </div>
+                </body>
+            </html>
+        </iframe>
+
+        <script>
+            const iframe = document.getElementById("whatsapp__iframe");
+            iframe.srcdoc = iframe.innerHTML;
+        </script>
+    
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Your Website 2020</div></footer>
         <!-- Bootstrap core JS-->
